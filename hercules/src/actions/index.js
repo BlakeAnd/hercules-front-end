@@ -8,8 +8,8 @@ export const ERROR_MESSAGE = "ERROR_MESSAGE"
 export const LOADING = "LOADING"
 export const GET_EXERCISE = "GET_EXERCISE"
 
-let login_url = 'http://localhost:5000/api/auth/login' || 'https://get-hercules.herokuapp.com/api/auth/login';
-let signup_url = 'http://localhost:5000/api/auth/register' || 'https://get-hercules.herokuapp.com/api/auth/register';
+let login_url = 'http://localhost:8000/api/auth/login' || 'https://get-hercules.herokuapp.com/api/auth/login';
+let signup_url = 'http://localhost:8000/api/auth/register' || 'https://get-hercules.herokuapp.com/api/auth/register';
 
 export const login = creds => dispatch => {
     dispatch({type:LOGIN_START});
