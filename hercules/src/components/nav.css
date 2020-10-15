@@ -1,7 +1,91 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-@media(min-width: 375px){
+@media(min-width: 900px){
+  .desktop-bar{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    max-width: 900px;
+    }
+    .Nav{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 11px;
+      }
+  
+      .mobile-bar{
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      }
+  
+      .Nav a{
+      text-decoration: none;
+      color: grey;
+      }
+  
+      .up{
+      display:none; 
+      }
+  
+  
+      .drop-down{
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      
+      }
+  
+      .drop-down a{
+      margin-top: 20px;
+      color: #ffffff;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      }
+      .nav-links{
+        border-bottom: 1px solid #343434;
+        width: 375px;
+        height: 36px;
+        position: relative;
+        left: -15px;
+        padding-top: 15px;
+      }
+      .nav-link-home{
+        border-top: 1px solid #343434;
+      }
+      .menu-burger{
+      background-image: url(../assets/Nav.svg);
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 23px;
+      cursor: pointer;
+      margin-top: 5px;
+      }
+      .menu-logo{
+      background-image: url(../assets/hercules-logo.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 34px;
+      height: 34px;
+      cursor: pointer;
+      margin: 0px auto;
+      }
+  
+      .menu-profile{
+      background-image: url(../assets/user.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 34px;
+      height: 34px;
+      margin-left: 45px;
+      cursor: pointer;
+      }
+}
+
+@media(max-width: 375px){
     .Nav{
     display: flex;
     flex-direction: column;

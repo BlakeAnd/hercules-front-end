@@ -22,7 +22,7 @@ class Nav extends React.Component{
     return(
       <div className="Nav">
   
-        <div className="mobile-bar">
+        <div className="mobile-bar desktop-bar">
           <div className="menu-burger" onClick={this.dropMenu}> </div>
           
           

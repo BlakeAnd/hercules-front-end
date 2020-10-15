@@ -1,53 +1,116 @@
-.list{
-  display: flex;
-  justify-content: space-around;
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@media(min-width: 900){
+  .list{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .exercise-info{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    position: relative;
+    top: 105px;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: white;
+    }
+
+  .action-btns{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    position: relative;
+    top: 525px;
+  }
+
+  .delete-btn{
+    border: none;
+    background-color: #FFEC42;
+    width: 150px;
+    height: 43px;
+    padding-top: 17px;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .update-btn{
+    border: none;
+    background-color: #FFEC42;
+    width: 150px;
+    height: 43px;
+    padding-top: 17px;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .back-btn{
+    background-image: url(../assets/Go-Back.svg);
+    width: 60px;
+    height: 24px;
+    margin: 5px 0px;
+    cursor: pointer;
+    position: relative;
+    bottom: 250px;
+    z-index: +2;
+  }
 }
 
-.exercise-info{
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-  position: relative;
-  top: 105px;
-  font-size: 24px;
-  text-align: left;
-  padding-left: 20px;
-  padding-bottom: 10px;
-}
+@media(max-width: 375px){
+  .list{
+    display: flex;
+    justify-content: space-around;
+  }
 
-.action-btns{
-  display: flex;
-  justify-content: space-around;
-  justify-items: center;
-  position: relative;
-  top: 525px;
-}
+  .exercise-info{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    position: relative;
+    top: 105px;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
 
-.delete-btn{
-  border: none;
-  background-color: #FFEC42;
-  width: 150px;
-  height: 43px;
-  padding-top: 17px;
-  text-decoration: none;
-  color: #000000;
-}
+  .action-btns{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    position: relative;
+    top: 525px;
+  }
 
-.update-btn{
-  border: none;
-  background-color: #FFEC42;
-  width: 150px;
-  height: 43px;
-  padding-top: 17px;
-  text-decoration: none;
-  color: #000000;
-}
+  .delete-btn{
+    border: none;
+    background-color: #FFEC42;
+    width: 150px;
+    height: 43px;
+    padding-top: 17px;
+    text-decoration: none;
+    color: #000000;
+  }
 
-.back-btn{
-  background-image: url(../assets/Go-Back.svg);
-  width: 60px;
-  height: 24px;
-  margin: 5px 0px;
-  cursor: pointer;
-  position: relative;
-  bottom: 250px;
+  .update-btn{
+    border: none;
+    background-color: #FFEC42;
+    width: 150px;
+    height: 43px;
+    padding-top: 17px;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .back-btn{
+    background-image: url(../assets/Go-Back.svg);
+    width: 60px;
+    height: 24px;
+    margin: 5px 0px;
+    cursor: pointer;
+    position: relative;
+    bottom: 250px;
+  }
 }

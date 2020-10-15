@@ -1,113 +1,215 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+@media(min-width: 900px){
+  .Nav{
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: +1;
+  }
 
-.Nav{
-  position: relative;
-  z-index: +1;
+  .workout-selection{
+    position: relative;
+    top: 350px;
+    left: 10px;
+    text-align: left;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  .workout-selection p{
+    position: relative;
+    left: 320px;
+    top: 150px;
+  }
+  .select-button{
+    background: #FFEC42;
+    border: none;
+    color: #000000;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    margin: 0px auto;
+    margin-right: 250px;
+    align-items: center;
+    padding-left: 66px;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    position: relative;
+    top: 395px;
+    right: 550px;
+    text-decoration: none !important;
+  }
+  .select-button p {
+    text-decoration: none !important;
+  }
+
+  .carouselButtons{
+    display: flex;
+    justify-content: center;
+    width: 130px;
+  }
+
+  .carouselButtons{
+    position: relative;
+    margin: 0px auto;
+    top: 335px;
+    left: 135px;
+    z-index: +1;
+  }
+
+  .btn-left{
+    background-image: url(../assets/arrow-up.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    border: 1px solid grey;
+    transform: rotate(-90deg);
+    margin-right: 4.5px;
+  }
+
+  .btn-right{
+    background-image: url(../assets/arrow-up.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    border: 1px solid grey;
+    transform: rotate(90deg);
+    margin-left: 4.5px;
+  }
+
+  
 }
 
-.Home{
-  font-family: 'Oswald';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1.rem;
-  height: 100%;
-  width: 100%;
-  color: white;
-    background-image: url("../images/dumbell-woman.png"); 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;  
+@media(max-width: 375px){
+  .Nav{
+    position: relative;
+    z-index: +1;
+  }
 
-    background: black;
-}
+  .Home{
+    font-family: 'Oswald';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1.rem;
+    height: 100%;
+    width: 100%;
+    color: white;
+      background-image: url("../images/dumbell-woman.png"); 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;  
 
-.workout-selection{
-  position: relative;
-  top: 350px;
-  left: 10px;
-  text-align: left;
-}
+      background: black;
+  }
 
-.workout-selection p{
-  position: relative;
-  left: 320px;
-  top: 150px;
-}
-.select-button{
-  background: #FFEC42;
-  border: none;
-  color: #000000;
-  width: 150px;
-  height: 60px;
-  display: flex;
-  margin-right: -50px !important;
-  align-items: center;
-  padding-left: 66px;
-  font-size: 14px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 16px;
-  text-align: center;
-  position: relative;
-  top: 415px;
-  right: -5px;
-  text-decoration: none !important;
-}
-.select-button p {
-  text-decoration: none !important;
-}
+  .workout-selection{
+    position: relative;
+    top: 350px;
+    left: 10px;
+    text-align: left;
+  }
 
-.carouselButtons{
-  display: flex;
-  justify-content: center;
-  width: 130px;
-}
+  .workout-selection p{
+    position: relative;
+    left: 320px;
+    top: 150px;
+  }
+  .select-button{
+    background: #FFEC42;
+    border: none;
+    color: #000000;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    margin-right: -50px !important;
+    align-items: center;
+    padding-left: 66px;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    position: relative;
+    top: 395px;
+    right: -5px;
+    text-decoration: none !important;
+  }
+  .select-button p {
+    text-decoration: none !important;
+  }
 
-.carouselButtons{
-  position: relative;
-  top: 355px;
-  left: 235px;
-  z-index: +1;
-}
+  .carouselButtons{
+    display: flex;
+    justify-content: center;
+    width: 130px;
+  }
 
-.btn-left{
-  background-image: url(../assets/arrow-up.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  border: 1px solid grey;
-  transform: rotate(-90deg);
-  margin-right: 4.5px;
-}
+  .carouselButtons{
+    position: relative;
+    top: 335px;
+    left: 235px;
+    z-index: +1;
+  }
 
-.count{
+  .btn-left{
+    background-image: url(../assets/arrow-up.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    border: 1px solid grey;
+    transform: rotate(-90deg);
+    margin-right: 4.5px;
+  }
+
+  .count{
+    font-size: .8rem;
+    width: 40px;
+    height: 40px;
+    background: #FFEC42;
+    border-radius: 1px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 115px !important;
+    right: 15px !important;
+  }
+
+/* .count{
   font-size: .8rem;
   width: 40px;
   height: 40px;
   background: #FFEC42;
   border-radius: 20px;
   color: black;
- 
+
   display: flex;
   justify-content: center;
   align-items: center;
   
+} */
+
+  .btn-right{
+    background-image: url(../assets/arrow-up.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    border: 1px solid grey;
+    transform: rotate(90deg);
+    margin-left: 4.5px;
+  }
+
 }
-
-
-.btn-right{
-  background-image: url(../assets/arrow-up.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  border: 1px solid grey;
-  transform: rotate(90deg);
-  margin-left: 4.5px;
-}
-

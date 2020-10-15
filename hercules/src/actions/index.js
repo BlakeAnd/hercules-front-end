@@ -8,10 +8,13 @@ export const ERROR_MESSAGE = "ERROR_MESSAGE"
 export const LOADING = "LOADING"
 export const GET_EXERCISE = "GET_EXERCISE"
 
+let login_url = 'http://localhost:8000/api/auth/login' || 'https://get-hercules.herokuapp.com/api/auth/login';
+let signup_url = 'http://localhost:8000/api/auth/register' || 'https://get-hercules.herokuapp.com/api/auth/register';
+
 export const login = creds => dispatch => {
     dispatch({type:LOGIN_START});
     return axios
-    .post('https://get-hercules.herokuapp.com/api/auth/login',creds)
+    .post(`${login_url}`,creds)
     .then(res => {
         localStorage.setItem('token',res.data.token)
         localStorage.setItem('id',res.data.user.id)
@@ -30,7 +33,9 @@ export const login = creds => dispatch => {
 export const signup = (creds) => {
     return(dispatch) => {
       dispatch({type: LOADING})
-      axios.post('https://hercules-backend.herokuapp.com/register', creds)
+
+      axios.post(`${signup_url}`, creds)
+
         .then( response => {
           console.log("res", response)
           dispatch({type: GET_USERS, users: response.data})
