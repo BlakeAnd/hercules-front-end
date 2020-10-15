@@ -34,6 +34,7 @@ class Login extends React.Component {
 
     loginSubmit = (event) => {
         event.preventDefault()
+        
         this.props.login(this.state.credentials)
             .then(res => {
                 

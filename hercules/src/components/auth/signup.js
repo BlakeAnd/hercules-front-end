@@ -12,10 +12,10 @@ class SignUp extends React.Component {
         this.state = {
             credentials: {
                 username: '',
-                password: '',
                 firstName: '',
                 lastName: '',
-                email: ''
+                emailAddress: '',
+                password: ''
             }
         }
     }
@@ -31,6 +31,7 @@ class SignUp extends React.Component {
 
     signupSubmit = (event) => {
         event.preventDefault();
+        console.log("signup creds", this.state.credentials)
         this.props.signup(this.state.credentials);
         
         this.setState({
@@ -38,9 +39,10 @@ class SignUp extends React.Component {
             password: '',
             firstName: '',
             lastName: '',
-            email: ''
+            emailAddress: ''
         })
         this.props.history.push('/')
+        console.log("signup state",this.state)
     }
 
     render() {
@@ -82,9 +84,9 @@ class SignUp extends React.Component {
                     <input
                         className="email-field"
                         type="string"
-                        name='email'
+                        name='emailAddress'
                         placeholder="email address"
-                        value={this.state.credentials.email}
+                        value={this.state.credentials.emailAddress}
                         onChange={this.handleChange}
                         required>
                     </input>

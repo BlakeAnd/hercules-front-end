@@ -94,6 +94,7 @@ class UpdateExercise extends React.Component{
                 <button type="button" onClick={this.inputHandler} disabled="disabled" name="targetRegion"  value="Legs">Legs</button>
             </div> */}
 
+
             <div className="addExercise-bottom">
                 <h3>Date</h3>
                 <h3> </h3>

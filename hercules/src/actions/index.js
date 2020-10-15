@@ -33,8 +33,11 @@ export const login = creds => dispatch => {
 export const signup = (creds) => {
     return(dispatch) => {
       dispatch({type: LOADING})
+
       axios.post(`${signup_url}`, creds)
+
         .then( response => {
+          console.log("res", response)
           dispatch({type: GET_USERS, users: response.data})
         })
         .catch(err => {
